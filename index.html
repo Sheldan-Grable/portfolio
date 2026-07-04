@@ -7,79 +7,156 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Sheldan Grable</h1>
-    <p>Front-end developer in progress, building clean and useful web projects.</p>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">Sheldan Grable</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Front-End Developer in Progress</p>
+      <h1 id="hero-title">Building useful tabletop RPG tools with HTML, CSS, and JavaScript.</h1>
+      <p class="hero-text">
+        I’m creating a themed suite of DM and player tools while developing clean,
+        responsive, beginner-friendly front-end projects.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary-button" href="#projects">View Projects</a>
+        <a class="button secondary-button" href="https://github.com/Sheldan-Grable" target="_blank" rel="noopener noreferrer">
+          GitHub Profile
+        </a>
+      </div>
+    </section>
   </header>
-  
+
   <main>
-    <section>
-      <h2>About Me</h2>
+    <section id="about" class="content-section">
+      <p class="section-label">About</p>
+      <h2>Focused on practical, readable web projects.</h2>
       <p>
-        I’m learning front-end development with HTML, CSS, JavaScript, and Python.
-        I’m interested in building practical, readable, responsive web projects.
+        I’m learning front-end development by building small, complete apps that solve
+        real tabletop RPG problems. My current focus is strengthening JavaScript,
+        DOM manipulation, responsive layout, and project organization.
       </p>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
+    <section id="skills" class="content-section">
+      <p class="section-label">Skills</p>
+      <h2>Tools and technologies</h2>
+
+      <ul class="skill-list" aria-label="Front-end skills">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>DOM Manipulation</li>
+        <li>localStorage</li>
+        <li>GitHub Pages</li>
         <li>Python</li>
-        <li>GitHub</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Projects</h2>
+    <section id="projects" class="content-section">
+      <p class="section-label">Projects</p>
+      <h2>DM Toolkit Projects</h2>
+      <p class="section-intro">
+        A growing collection of fantasy-themed tools built to practice front-end
+        fundamentals while creating useful resources for tabletop RPG sessions.
+      </p>
 
-      <article>
-        <h3>Quest Board</h3>
-        <p>
-          A fantasy-themed quest board app with difficulty filters, quest type filters,
-          search, active button states, a quest counter, and a no-results message.
-        </p>
-        <p>Built with HTML, CSS, and JavaScript.</p>
-        <p>
-          <a href="https://sheldan-grable.github.io/quest-board/" target="_blank">
-            Live Demo
-          </a>
-          |
-          <a href="https://github.com/Sheldan-Grable/quest-board" target="_blank">
-            View Code
-          </a>
-        </p>
-      </article>
+      <div class="project-grid">
+        <article class="project-card">
+          <div>
+            <p class="project-status">Live Project</p>
+            <h3>DM Travel Buddy</h3>
+            <p>
+              A travel-day generator for tabletop RPGs that uses player roll totals,
+              travel pace, terrain, and danger level to create useful overland travel results.
+            </p>
+          </div>
 
-      <article>
-        <h3>Adventurer's Notebook</h3>
-        <p>
-          A fantasy-themed campaign notes app where users can create, edit, delete,
-          search, filter, pin, and save notes locally in the browser.
-        </p>
-        <p>
-          Built with HTML, CSS, JavaScript, DOM manipulation, forms, and localStorage.
-        </p>
-        <p>
-          <a href="https://sheldan-grable.github.io/adventurers-notebook/" target="_blank">
-            Live Demo
-          </a>
-          |
-          <a href="https://github.com/Sheldan-Grable/adventurers-notebook" target="_blank">
-            View Code
-          </a>
-        </p>
-      </article>
+          <ul class="project-tech">
+            <li>JavaScript</li>
+            <li>Conditional Rendering</li>
+            <li>Randomized Data</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://sheldan-grable.github.io/dm-travel-buddy/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/Sheldan-Grable/dm-travel-buddy" target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="project-status">Live Project</p>
+            <h3>Adventurer’s Notebook</h3>
+            <p>
+              A campaign note-taking app with add, edit, delete, search, category filters,
+              pinned notes, timestamps, and persistent localStorage saving.
+            </p>
+          </div>
+
+          <ul class="project-tech">
+            <li>JavaScript</li>
+            <li>localStorage</li>
+            <li>Search & Filters</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://sheldan-grable.github.io/adventurers-notebook/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/Sheldan-Grable/adventurers-notebook" target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="project-status">Live Project</p>
+            <h3>Quest Board</h3>
+            <p>
+              A D&amp;D-inspired quest board with quest cards, combined filters, active
+              button states, search, quest counter, and a no-results message.
+            </p>
+          </div>
+
+          <ul class="project-tech">
+            <li>JavaScript</li>
+            <li>Filtering</li>
+            <li>DOM Updates</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://sheldan-grable.github.io/quest-board/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/Sheldan-Grable/quest-board" target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+      </div>
     </section>
-    
-    <section>
-      <h2>Contact</h2>
-      <p>Email: Grablesheldan@gmail.com</p>
-      <p>GitHub: github.com/sheldan-grable</p>
+
+    <section id="contact" class="content-section contact-section">
+      <p class="section-label">Contact</p>
+      <h2>Let’s connect</h2>
+      <p>
+        I’m continuing to build small front-end projects and improve this portfolio one feature at a time.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:Grablesheldan@gmail.com">Grablesheldan@gmail.com</a>
+        <a href="https://github.com/Sheldan-Grable" target="_blank" rel="noopener noreferrer">github.com/Sheldan-Grable</a>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Sheldan Grable. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
