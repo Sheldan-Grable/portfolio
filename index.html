@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Sheldan Grable | Front-End Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="#">Sheldan Grable</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="Go to homepage">
+        <span class="logo-mark">SG</span>
+        <span>Sheldan Grable</span>
+      </a>
 
       <div class="nav-links">
         <a href="#about">About</a>
@@ -19,37 +24,73 @@
       </div>
     </nav>
 
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Front-End Developer in Progress</p>
-      <h1 id="hero-title">Building useful tabletop RPG tools with HTML, CSS, and JavaScript.</h1>
-      <p class="hero-text">
-        I’m creating a themed suite of DM and player tools while developing clean,
-        responsive, beginner-friendly front-end projects.
-      </p>
+    <section id="top" class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Front-End Developer in Progress</p>
 
-      <div class="hero-actions">
-        <a class="button primary-button" href="#projects">View Projects</a>
-        <a class="button secondary-button" href="https://github.com/Sheldan-Grable" target="_blank" rel="noopener noreferrer">
-          GitHub Profile
-        </a>
+        <h1>Building useful tabletop RPG tools with clean front-end code.</h1>
+
+        <p class="hero-text">
+          I’m creating a themed suite of DM and player tools while strengthening my
+          HTML, CSS, JavaScript, responsive design, and project organization skills.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary-button" href="#projects">View Projects</a>
+          <a
+            class="button secondary-button"
+            href="https://github.com/Sheldan-Grable"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Profile
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="Portfolio stats">
+          <span>3 Live Projects</span>
+          <span>HTML / CSS / JS</span>
+          <span>GitHub Pages</span>
+        </div>
       </div>
+
+      <aside class="hero-card reveal" aria-label="Portfolio summary">
+        <p class="card-label">Current Build</p>
+        <h2>DM Toolkit Portfolio</h2>
+        <p>
+          A small but growing collection of practical tabletop RPG apps designed,
+          built, and deployed one feature at a time.
+        </p>
+
+        <ul class="hero-checklist">
+          <li>Responsive layouts</li>
+          <li>Interactive JavaScript tools</li>
+          <li>Persistent browser data</li>
+          <li>Readable beginner-friendly code</li>
+        </ul>
+      </aside>
     </section>
   </header>
 
   <main>
-    <section id="about" class="content-section">
-      <p class="section-label">About</p>
-      <h2>Focused on practical, readable web projects.</h2>
+    <section id="about" class="content-section reveal">
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h2>Practical projects with a clear theme.</h2>
+      </div>
+
       <p>
         I’m learning front-end development by building small, complete apps that solve
-        real tabletop RPG problems. My current focus is strengthening JavaScript,
-        DOM manipulation, responsive layout, and project organization.
+        real tabletop RPG problems. My focus is writing readable code, creating useful
+        interfaces, and improving one feature at a time.
       </p>
     </section>
 
-    <section id="skills" class="content-section">
-      <p class="section-label">Skills</p>
-      <h2>Tools and technologies</h2>
+    <section id="skills" class="content-section reveal">
+      <div class="section-heading">
+        <p class="section-label">Skills</p>
+        <h2>Tools and technologies</h2>
+      </div>
 
       <ul class="skill-list" aria-label="Front-end skills">
         <li>HTML</li>
@@ -63,34 +104,55 @@
       </ul>
     </section>
 
-    <section id="projects" class="content-section">
-      <p class="section-label">Projects</p>
-      <h2>DM Toolkit Projects</h2>
-      <p class="section-intro">
-        A growing collection of fantasy-themed tools built to practice front-end
-        fundamentals while creating useful resources for tabletop RPG sessions.
-      </p>
+    <section id="projects" class="content-section projects-section reveal">
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2>DM Toolkit Projects</h2>
+        <p class="section-intro">
+          A collection of fantasy-themed tools built to practice front-end fundamentals
+          while creating useful resources for tabletop RPG sessions.
+        </p>
+      </div>
 
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card featured-project">
           <div>
-            <p class="project-status">Live Project</p>
+            <p class="project-status">Featured Project</p>
             <h3>DM Travel Buddy</h3>
+
             <p>
               A travel-day generator for tabletop RPGs that uses player roll totals,
               travel pace, terrain, and danger level to create useful overland travel results.
+            </p>
+
+            <p class="project-note">
+              Demonstrates conditional rendering, form-based inputs, randomized data,
+              and user-focused result design.
             </p>
           </div>
 
           <ul class="project-tech">
             <li>JavaScript</li>
-            <li>Conditional Rendering</li>
+            <li>Conditional UI</li>
             <li>Randomized Data</li>
           </ul>
 
           <div class="project-links">
-            <a href="https://sheldan-grable.github.io/dm-travel-buddy/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href="https://github.com/Sheldan-Grable/dm-travel-buddy" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a
+              href="https://sheldan-grable.github.io/dm-travel-buddy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Sheldan-Grable/dm-travel-buddy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code
+            </a>
           </div>
         </article>
 
@@ -98,9 +160,14 @@
           <div>
             <p class="project-status">Live Project</p>
             <h3>Adventurer’s Notebook</h3>
+
             <p>
               A campaign note-taking app with add, edit, delete, search, category filters,
               pinned notes, timestamps, and persistent localStorage saving.
+            </p>
+
+            <p class="project-note">
+              Demonstrates CRUD-style interactions, search/filter logic, and browser storage.
             </p>
           </div>
 
@@ -111,8 +178,21 @@
           </ul>
 
           <div class="project-links">
-            <a href="https://sheldan-grable.github.io/adventurers-notebook/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href="https://github.com/Sheldan-Grable/adventurers-notebook" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a
+              href="https://sheldan-grable.github.io/adventurers-notebook/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Sheldan-Grable/adventurers-notebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code
+            </a>
           </div>
         </article>
 
@@ -120,9 +200,14 @@
           <div>
             <p class="project-status">Live Project</p>
             <h3>Quest Board</h3>
+
             <p>
               A D&amp;D-inspired quest board with quest cards, combined filters, active
               button states, search, quest counter, and a no-results message.
+            </p>
+
+            <p class="project-note">
+              Demonstrates DOM updates, combined filtering, active states, and search logic.
             </p>
           </div>
 
@@ -133,28 +218,64 @@
           </ul>
 
           <div class="project-links">
-            <a href="https://sheldan-grable.github.io/quest-board/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href="https://github.com/Sheldan-Grable/quest-board" target="_blank" rel="noopener noreferrer">View Code</a>
+            <a
+              href="https://sheldan-grable.github.io/quest-board/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/Sheldan-Grable/quest-board"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code
+            </a>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="content-section contact-section">
-      <p class="section-label">Contact</p>
-      <h2>Let’s connect</h2>
+    <section id="contact" class="content-section contact-section reveal">
+      <div class="section-heading">
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect</h2>
+      </div>
+
       <p>
-        I’m continuing to build small front-end projects and improve this portfolio one feature at a time.
+        I’m continuing to build small front-end projects and improve this portfolio
+        one focused feature at a time.
       </p>
 
-      <div class="contact-links">
-        <a href="mailto:Grablesheldan@gmail.com">Grablesheldan@gmail.com</a>
-        <a href="https://github.com/Sheldan-Grable" target="_blank" rel="noopener noreferrer">github.com/Sheldan-Grable</a>
+      <div class="contact-actions">
+        <a class="button primary-button" href="mailto:Grablesheldan@gmail.com">
+          Email Me
+        </a>
+
+        <button
+          class="button secondary-button"
+          id="copy-email-button"
+          type="button"
+          data-email="Grablesheldan@gmail.com"
+        >
+          Copy Email
+        </button>
+
+        <a
+          class="button secondary-button"
+          href="https://github.com/Sheldan-Grable"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; <span id="current-year"></span> Sheldan Grable. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
